@@ -32,3 +32,8 @@
 en:
   app_title: My Website
   app_description: A website for my com2025 coursework.
+
+  home:
+    home:
+      title: My Website
+      welcome: Welcome to my website!

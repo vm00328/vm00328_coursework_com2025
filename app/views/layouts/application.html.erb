@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title><%= t('title') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +10,12 @@
 
   <body>
     <%= render "shared/header" %>
-    <%= yield %>
+    <% flash.each do |key, value| %>
+      <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+    <% end %>
+    <div id="main_content">
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </body>
 </html>

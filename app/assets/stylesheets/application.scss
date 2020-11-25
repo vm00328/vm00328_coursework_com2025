@@ -15,3 +15,28 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$font: 'Times New Roman';
+$color: coral;
+
+body{
+  font-family: $font;
+  background-color: $color;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+footer {
+
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}

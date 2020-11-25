@@ -30,10 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: My Website
+  app_title: Sofia Open
   app_description: A website for my com2025 coursework.
 
   home:
     home:
-      title: My Website
+      title_home: Sofia Open Tennis Tournament
       welcome: Welcome to my website!

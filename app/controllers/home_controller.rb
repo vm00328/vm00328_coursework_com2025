@@ -17,5 +17,5 @@ class HomeController < ApplicationController
       flash[:notice] = I18n.t('home.request_contact.email_sent')
     end
     redirect_to root_path
-  end
+    end
 end

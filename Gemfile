@@ -61,5 +61,6 @@ gem 'rails-controller-testing'
 gem 'jquery-rails'
 gem 'rails-controller-testing'
 gem 'jquery-validation-rails'
+gem 'devise'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

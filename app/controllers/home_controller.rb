@@ -4,10 +4,7 @@ class HomeController < ApplicationController
 
   def contact
   end
-
-  # def webform
-  #   @player = Player.new
-  # end
+  
   def request_contact
     name = params[:name]
     email = params[:email]

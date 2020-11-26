@@ -195,6 +195,14 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+.navbar {
+  a {
+    // color: red;
+    text-align: center;
+    font-style: oblique;
+  }
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

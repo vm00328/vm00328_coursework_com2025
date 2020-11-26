@@ -1,3 +1,19 @@
+<nav class="navbar">
+<% if user_signed_in? %>
+<%= "#{current_user.email} |" %>
+<%= link_to t('profile'), edit_user_registration_path %>
+<%= '|' %>
+<%= link_to t('logout'), destroy_user_session_path, method: 'delete' %>
+<% else %>
+<% end %>
+<%= link_to t('login'), new_user_session_path %>
+<%= '|' %>
+<%= link_to t('sign_up'), new_user_registration_path %>
+</nav>
+<% flash.each do |key, value| %>
+  <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+<% end %>
+
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <%= link_to("Home", home_path()) %>
@@ -9,3 +25,9 @@
 <div id="main">
   <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
 </div>
+<p class="notice">
+  <%= notice %>
+</p>
+<p class="alert">
+  <%= alert %>
+</p>

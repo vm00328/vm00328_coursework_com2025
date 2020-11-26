@@ -54,6 +54,21 @@ footer {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
 }
+/* The navbar styling */
+.navbar {
+  a {
+    // color: red;
+    text-align: center;
+    font-style: oblique;
+    color: #818181;
+    padding: 8px 8px 8px 32px;
+    font-size: 15px;
+  }
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+}
 
 /* The sidebar links */
 .sidebar a {
@@ -195,13 +210,6 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
-.navbar {
-  a {
-    // color: red;
-    text-align: center;
-    font-style: oblique;
-  }
-}
 
 @-webkit-keyframes fade {
   from {opacity: .4}

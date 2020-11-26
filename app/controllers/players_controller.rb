@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update]
-
+  before_action :authenticate_user!
   # GET /players
   # GET /players.json
   def index

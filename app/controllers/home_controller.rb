@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def contact
   end
-  
+
   def request_contact
     name = params[:name]
     email = params[:email]

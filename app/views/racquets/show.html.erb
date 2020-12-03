@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @racquet.brand %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @racquet.level %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @racquet.weight %>
+</p>
+
+<%= link_to 'Edit', edit_racquet_path(@racquet) %> |
+<%= link_to 'Back', racquets_path %>

@@ -1,8 +1,58 @@
-<footer>
-  <p>
-    &copy; Creator: Vladislav Manolov
-  </p>
-  <span>
-    Contact me at: <a href="mailto:vm00328@surrey.ac.uk">vm00328@surrey.ac.uk</a>
-  </span>
-</footer>
+<footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>
+                                  <%= t('.find_us') %>
+                                </h4>
+                                <span>
+                                  <%= t('.address_of_company') %>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4><%= t('.call_us') %></h4>
+                                <span><%= t('.telephone') %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4><%= t('.email_us') %></h4>
+                                <span><%= t('.company_email') %></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget"></div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>&copy<%= t('.copyright') %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>

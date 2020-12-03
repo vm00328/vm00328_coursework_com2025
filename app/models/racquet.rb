@@ -1,0 +1,2 @@
+class Racquet < ApplicationRecord
+end

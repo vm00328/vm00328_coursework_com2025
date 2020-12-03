@@ -30,12 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: Sofia Open
+  app_title: Tennis World VM
   app_description: A website for my com2025 coursework.
 
   home:
     home:
-      title_home: Sofia Open Tennis Tournament
+      title_home: My Tennis Store
       welcome: Welcome to my website!
 
     contact:
@@ -53,5 +53,18 @@ en:
       submit: Contact Us
 
     request_contact:
-      no_email: You must supply an email address
+      no_email: You must supply an email address.
       email_sent: Thank you. We will be in touch shortly.
+
+  clothings:
+    info: clothing page
+
+  shared:
+    footer:
+      find_us: "Where to find us:"
+      address_of_company: 1010 Avenue, Guildford, Surrey, United Kingdom
+      call_us: "Call us at:"
+      telephone: +44 1234 56789
+      email_us: "Email us at:"
+      company_email: tennisWorldVM@gmail.com
+      copyright: "Copyright 2020 / Creator: Vladislav Manolov / All Rights Reserved"

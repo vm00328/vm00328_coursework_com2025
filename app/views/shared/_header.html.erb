@@ -10,16 +10,15 @@
 <%= '|' %>
 <%= link_to t('sign_up'), new_user_registration_path %>
 </nav>
-<% flash.each do |key, value| %>
-  <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
-<% end %>
-
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
   <%= link_to("Home", home_path()) %>
-  <a href="contact">Contact us</a>
-  <a href="#">News</a>
-  <a href="players">Our superstars</a>
+  <a href="clothings">Clothing</a>
+  <a href="accessories">Accessories</a>
+  <a href="shoes">Tennis Shoes</a>
+  <a href="racquets">Tennis Racquets</a>
+  <a href="contact">Contact Us</a>
 </div>
 
 <div id="main">
@@ -31,3 +30,39 @@
 <p class="alert">
   <%= alert %>
 </p>
+<!-- <ul>
+  <li><a href="clothing">Clothing</a></li>
+  <li><a href="racquets">Tennis Racquets</a></li>
+  <li><a href="clothing">Tennis Apparel</a></li>
+  <li><a href="accessories">Accessories</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul> -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Tennis World VM</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>

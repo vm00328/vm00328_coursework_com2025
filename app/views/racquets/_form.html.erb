@@ -1,0 +1,32 @@
+<%= form_with(model: racquet, local: true) do |form| %>
+  <% if racquet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(racquet.errors.count, "error") %> prohibited this racquet from being saved:</h2>
+
+      <ul>
+      <% racquet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :level %>
+    <%= form.text_field :level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

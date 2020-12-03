@@ -33,7 +33,7 @@ en:
   app_title: Tennis World VM
   home:
     home:
-      title_home: My Tennis Store
+      title_home: Tennis World VM
 
     contact:
       title: Contact Us
@@ -66,7 +66,6 @@ en:
       copyright: "Copyright 2020 / Creator: Vladislav Manolov / All Rights Reserved"
     header:
       clothing: Clothing
-      accessories: Accessories
       shoes: Shoes
       racquets: Tennis Racquets
       contact: Contact Us

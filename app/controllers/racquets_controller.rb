@@ -1,6 +1,6 @@
 class RacquetsController < ApplicationController
   before_action :set_racquet, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /racquets
   # GET /racquets.json
   def index

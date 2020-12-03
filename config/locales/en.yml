@@ -31,17 +31,13 @@
 
 en:
   app_title: Tennis World VM
-  app_description: A website for my com2025 coursework.
-
   home:
     home:
       title_home: My Tennis Store
-      welcome: Welcome to my website!
 
     contact:
       title: Contact Us
       contact_us: Complete the following form to get in touch with us.
-
       name: "Name:"
       enter_name: Enter your name
       email: "Email:"
@@ -68,3 +64,9 @@ en:
       email_us: "Email us at:"
       company_email: tennisWorldVM@gmail.com
       copyright: "Copyright 2020 / Creator: Vladislav Manolov / All Rights Reserved"
+    header:
+      clothing: Clothing
+      accessories: Accessories
+      shoes: Shoes
+      racquets: Tennis Racquets
+      contact: Contact Us

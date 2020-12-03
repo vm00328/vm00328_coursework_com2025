@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_03_100251) do
+ActiveRecord::Schema.define(version: 2020_12_03_143351) do
 
   create_table "clothings", force: :cascade do |t|
     t.string "gender"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 2020_12_03_100251) do
     t.string "last_name"
     t.integer "age"
     t.string "nationality"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "racquets", force: :cascade do |t|
+    t.string "brand"
+    t.string "level"
+    t.float "weight"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

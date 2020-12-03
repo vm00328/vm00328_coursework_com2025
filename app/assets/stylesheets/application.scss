@@ -36,8 +36,6 @@ $color: #DADED4;
 body{
   font-family: $font;
   background-color: $color;
-  margin: 10px;
-  padding: 10px;
 }
 
 h1{
@@ -50,16 +48,6 @@ h1{
       font-size: 13px;
       font-style: normal;
       font-weight: bold;
-}
-footer {
-
-  border-top: 1px solid black;
-  position: fixed;
-  bottom: 0;
-  width: 98%;
-  padding: 5px;
-  color: white;
-  text-align: center;
 }
 
 /* The sidebar menu */
@@ -75,23 +63,6 @@ footer {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
 }
-// /* The navbar styling */
-// .navbar {
-//   a {
-//     // color: red;
-//     text-align: center;
-//     color: #818181;
-//     padding: 8px 8px 8px 32px;
-//     font-size: 15px;
-//     color: black;
-//     border: none;
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 5px;
-//     display: inline;
-//   }
-// }
-
 .navbar a:hover {
   color: #f1f1f1;
 }

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'home#home'
 
   #The tennis racquets page
-  get 'racquets', to: 'home#racquets'
+  get 'racquets', to: 'racquets#index'
 
   #The clothing page
   get 'clothing', to: 'clothings#index'
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'shoes', to: 'home#index'
 
   #The accessories page
-  get 'accessories', to: 'home#index'
+  get 'accessories', to: 'accessories#index'
   get 'home', to: 'home#home'
 
   #The contact page

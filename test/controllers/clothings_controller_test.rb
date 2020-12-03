@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class ClothingsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
     @clothing = clothings(:one)
+    @user=users(:one)
+    sign_in @user
   end
 
   test "should get index" do

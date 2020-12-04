@@ -5,6 +5,7 @@ class ClothingsController < ApplicationController
   # GET /clothings.json
   def index
     @clothings = Clothing.all
+    @clothings = Clothing.user_clothings(current_user)
   end
 
   # GET /clothings/1
@@ -25,7 +26,7 @@ class ClothingsController < ApplicationController
   # POST /clothings.json
   def create
     @clothing = Clothing.new(clothing_params)
-
+    @clothing.user = current_user
     respond_to do |format|
       if @clothing.save
         format.html { redirect_to @clothing, notice: 'Clothing was successfully created.' }

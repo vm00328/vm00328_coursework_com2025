@@ -29,7 +29,7 @@ class ClothingsController < ApplicationController
     @clothing.user = current_user
     respond_to do |format|
       if @clothing.save
-        format.html { redirect_to @clothing, notice: 'Clothing was successfully created.' }
+        format.html { redirect_to @clothing, notice: t('.create') }
         format.json { render :show, status: :created, location: @clothing }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ClothingsController < ApplicationController
   def update
     respond_to do |format|
       if @clothing.update(clothing_params)
-        format.html { redirect_to @clothing, notice: 'Clothing was successfully updated.' }
+        format.html { redirect_to @clothing, notice: t('.edit') }
         format.json { render :show, status: :ok, location: @clothing }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ClothingsController < ApplicationController
   def destroy
     respond_to do |format|
       if @clothing.destroy
-        format.html { redirect_to clothings_url, notice: 'Clothing was successfully destroyed.' }
+        format.html { redirect_to clothings_url, notice: t('.remove')  }
     else
       format.html { redirect_to clothings_url, notice: 'Clothing cannot be destroyed. It is in use.' }
     end

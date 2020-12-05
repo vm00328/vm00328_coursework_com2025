@@ -1,4 +1,3 @@
-<form style="contact_page">
 <%= form_tag request_contact_path, method: 'post'  %>
   <section class="contact-page-sec">
     <div class="container">
@@ -28,8 +27,8 @@
                 </div>
               </div>
               <div class="col-md-12 message-input">
-                <div class="single-input-field" style="resize: both;">
-                <%= text_field_tag :message, '', title: t('.enter_message'), size: 100, placeholder: "Your message:" %>
+                <div class="single-input-field">
+                <%= text_field_tag :message, '', title: t('.enter_message'), size: 300, placeholder: "Your message:" %>
                 </div>
               </div>
               <div class="single-input-fieldsbtn"><%= submit_tag t('.submit') %></div>
@@ -42,4 +41,3 @@
           </div>
         </div>
     </section>
-</form>

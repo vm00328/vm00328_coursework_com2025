@@ -31,10 +31,10 @@
 
 en:
   app_title: Tennis World VM
+
   home:
     home:
       title_home: Tennis World VM
-
     contact:
       contact_us: "Complete the following form to get in touch with us:"
       submit: Contact Us
@@ -44,7 +44,28 @@ en:
       email_sent: Thank you. We will be in touch shortly.
 
   clothings:
-    info: clothing page
+    index:
+      info: Your Clothings
+      gender: Gender
+      brand: Brand
+      category: Category
+      size: Size
+      price: Price
+    create:
+      create: Clothing was successfully created.
+    update:
+      edit: Clothing was successfully edited.
+    destroy:
+      remove: Clothing was successfully removed.
+    new:
+      title: New Clothing
+
+  racquets:
+    index:
+      info: Your Racquets
+      brand: Brand
+      level: Level
+      weight: Weight(gr)
 
   shared:
     footer:

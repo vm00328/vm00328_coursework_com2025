@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clothing: one
+  cart: one
+
+two:
+  clothing: two
+  cart: two

@@ -55,13 +55,15 @@ class ClothingsController < ApplicationController
   # DELETE /clothings/1
   # DELETE /clothings/1.json
   def destroy
-    @clothing.destroy
     respond_to do |format|
-      format.html { redirect_to clothings_url, notice: 'Clothing was successfully destroyed.' }
-      format.json { head :no_content }
+      if @clothing.destroy
+        format.html { redirect_to clothings_url, notice: 'Clothing was successfully destroyed.' }
+    else
+      format.html { redirect_to clothings_url, notice: 'Clothing cannot be destroyed. It is in use.' }
     end
+    format.json { head :no_content }
   end
-
+end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_clothing

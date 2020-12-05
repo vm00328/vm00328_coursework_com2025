@@ -36,16 +36,7 @@ en:
       title_home: Tennis World VM
 
     contact:
-      title: Contact Us
-      contact_us: Complete the following form to get in touch with us.
-      name: "Name:"
-      enter_name: Enter your name
-      email: "Email:"
-      enter_email: Enter your email address
-      telephone: "Telephone:"
-      enter_telephone: Enter your telephone number
-      message: "Message:"
-      enter_message: What do you want to say?
+      contact_us: "Complete the following form to get in touch with us:"
       submit: Contact Us
 
     request_contact:

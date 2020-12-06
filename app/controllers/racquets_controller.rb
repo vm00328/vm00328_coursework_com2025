@@ -5,6 +5,7 @@ class RacquetsController < ApplicationController
   # GET /racquets.json
   def index
     @racquets = Racquet.all
+    @racquets = Racquet.user_racquets(current_user)
   end
 
   # GET /racquets/1
@@ -25,6 +26,7 @@ class RacquetsController < ApplicationController
   # POST /racquets.json
   def create
     @racquet = Racquet.new(racquet_params)
+    @racquet.user = current_user
 
     respond_to do |format|
       if @racquet.save

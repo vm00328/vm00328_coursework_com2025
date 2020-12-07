@@ -66,6 +66,44 @@ en:
       brand: Brand
       level: Level
       weight: Weight(gr)
+      show: Display
+      edit: Edit your racquet
+      remove: Remove
+      confirm_remove: "Are you sure you want to remove this racquet?"
+      add_new_racquet: Add new racquet
+    new:
+      new_racquet: New Racquet
+      link_back: Return to the Racquets page
+    show:
+      brand: Brand
+      level: Level
+      weight: Weight
+      edit: Edit your racquet
+      back: Back to your racquets
+      add_cord: Add cord to this racquet
+    edit:
+      edit: Editing your Racquet
+
+  cords:
+    index:
+      title: "Here you can add a customised cord to your racquet:"
+      racquet: Racquet
+      name: Name of Cord
+      colour: Colour
+      view: View
+      edit: Change your cord
+      destroy: Remove
+      confirm_destroy: "Are you sure you want to remove this cord?"
+      new_cord: Create a new cord for you racquets
+      back: Back to the Racquets page
+    show:
+      racquet: "Racquet:"
+      name_of_cord: "Name of the cord you picked:"
+      colour: "Colour of your cord:"
+      edit: Edit the cord of your racquet
+      back: Back to the Cords page
+    new:
+      create_cord: Add new cord
 
   shared:
     footer:

@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cords</h1>
+<h1><%= t('.title') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Racquet</th>
-      <th>Name</th>
-      <th>Colour</th>
+      <th><%= t('.racquet') %></th>
+      <th><%= t('.name') %></th>
+      <th><%= t('.colour') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,15 +18,14 @@
         <td><%= cord.racquet.brand %></td>
         <td><%= cord.name %></td>
         <td><%= cord.colour %></td>
-        <td><%= link_to 'Show', cord %></td>
-        <td><%= link_to 'Edit', edit_cord_path(cord) %></td>
-        <td><%= link_to 'Destroy', cord, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('.view'), cord %></td>
+        <td><%= link_to t('.edit'), edit_cord_path(cord) %></td>
+        <td><%= link_to t('.remove'), cord, method: :delete, data: { confirm: t('.confirm_destroy') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<%= link_to t('.new_cord'), new_cord_path %>
 <br>
-
-<%= link_to 'New Cord', new_cord_path %>
-<%= link_to 'Back to Racquets', racquets_path %>
+<%= link_to t('.back'), racquets_path %>

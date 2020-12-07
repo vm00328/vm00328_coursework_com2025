@@ -1,5 +1,5 @@
-<h1>New Racquet</h1>
+<h1><%= t('.new_racquet') %></h1>
 
 <%= render 'form', racquet: @racquet %>
 
-<%= link_to 'Back', racquets_path, :class => 'back_button' %>
+<%= link_to t('.link_back'), racquets_path, :class => 'back_button' %>

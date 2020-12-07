@@ -16,12 +16,12 @@
         <td><%= racquet.brand %></td>
         <td><%= racquet.level %></td>
         <td><%= racquet.weight %></td>
-        <td><%= link_to 'Display', racquet %></td>
-        <td><%= link_to 'Edit', edit_racquet_path(racquet) %></td>
-        <td><%= link_to 'Remove', racquet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('.show'), racquet %></td>
+        <td><%= link_to t('.edit'), edit_racquet_path(racquet) %></td>
+        <td><%= link_to t('.remove'), racquet, method: :delete, data: { confirm: t('.confirm_remove') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 <br>
-<%= link_to 'Add New Racquet', new_racquet_path, :class => 'new_items' %>
+<%= link_to t('.add_new_racquet'), new_racquet_path, :class => 'new_items' %>

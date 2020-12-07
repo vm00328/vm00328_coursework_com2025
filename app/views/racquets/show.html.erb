@@ -1,18 +1,18 @@
 <p>
-  <strong>Brand:</strong>
+  <strong><%= t('.brand') %></strong>
   <%= @racquet.brand %>
 </p>
 
 <p>
-  <strong>Level:</strong>
+  <strong><%= t('.level') %></strong>
   <%= @racquet.level %>
 </p>
 
 <p>
-  <strong>Weight:</strong>
+  <strong><%= t('.weight') %></strong>
   <%= @racquet.weight %>
 </p>
 
-<%= link_to 'Edit', edit_racquet_path(@racquet) %> |
-<%= link_to 'Back', racquets_path %>
-<%= link_to 'Add Cord', new_cord_path(racquet_id: @racquet) %>
+<%= link_to t('.edit'), edit_racquet_path(@racquet) %> |
+<%= link_to t('.back'), racquets_path %>
+<%= link_to t('.add_cord'), new_cord_path(racquet_id: @racquet) %>

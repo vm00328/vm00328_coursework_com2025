@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Racquet:</strong>
+  <strong><%= t('.racquet') %></strong>
   <%= @cord.racquet.brand %>
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('.name_of_cord') %></strong>
   <%= @cord.name %>
 </p>
 
 <p>
-  <strong>Colour:</strong>
+  <strong><%= t('.colour') %></strong>
   <%= @cord.colour %>
 </p>
 
-<%= link_to 'Edit', edit_cord_path(@cord) %> |
-<%= link_to 'Back', cords_path %>
+<%= link_to t('.edit'), edit_cord_path(@cord) %> |
+<%= link_to t('.back'), cords_path %>

@@ -7,8 +7,6 @@ end
 
 test "should save valid racquet" do
     racquet = Racquet.new
-#     # post clothings_path, params:{gender: 'Male', brand: 'Nike', category: 'T-Shirt', size: 'L', price: 90}
-#     # assert_response :redirect
     racquet.brand = 'Babolat'
     racquet.level = 'Intermediate'
     racquet.weight = 300.0

@@ -2,7 +2,7 @@
 
 <p>
   <strong>Racquet:</strong>
-  <%= @cord.racquet %>
+  <%= @cord.racquet.brand %>
 </p>
 
 <p>
@@ -13,11 +13,6 @@
 <p>
   <strong>Colour:</strong>
   <%= @cord.colour %>
-</p>
-
-<p>
-  <strong>Level:</strong>
-  <%= @cord.level %>
 </p>
 
 <%= link_to 'Edit', edit_cord_path(@cord) %> |

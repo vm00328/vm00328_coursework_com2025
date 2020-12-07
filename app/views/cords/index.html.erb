@@ -8,7 +8,6 @@
       <th>Racquet</th>
       <th>Name</th>
       <th>Colour</th>
-      <th>Level</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +15,9 @@
   <tbody>
     <% @cords.each do |cord| %>
       <tr>
-        <td><%= cord.racquet %></td>
+        <td><%= cord.racquet.brand %></td>
         <td><%= cord.name %></td>
         <td><%= cord.colour %></td>
-        <td><%= cord.level %></td>
         <td><%= link_to 'Show', cord %></td>
         <td><%= link_to 'Edit', edit_cord_path(cord) %></td>
         <td><%= link_to 'Destroy', cord, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,3 +29,4 @@
 <br>
 
 <%= link_to 'New Cord', new_cord_path %>
+<%= link_to 'Back to Racquets', racquets_path %>

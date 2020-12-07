@@ -17,7 +17,7 @@ class CordsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create cord" do
     assert_difference('Cord.count') do
-      post cords_url, params: { cord: { colour: @cord.colour, level: @cord.level, name: @cord.name, racquet_id: @cord.racquet_id } }
+      post cords_url, params: { cord: { colour: @cord.colour, name: @cord.name, racquet_id: @cord.racquet_id } }
     end
 
     assert_redirected_to cord_url(Cord.last)
@@ -34,7 +34,7 @@ class CordsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update cord" do
-    patch cord_url(@cord), params: { cord: { colour: @cord.colour, level: @cord.level, name: @cord.name, racquet_id: @cord.racquet_id } }
+    patch cord_url(@cord), params: { cord: { colour: @cord.colour, name: @cord.name, racquet_id: @cord.racquet_id } }
     assert_redirected_to cord_url(@cord)
   end
 

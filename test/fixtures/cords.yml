@@ -4,10 +4,8 @@ one:
   racquet: one
   name: MyString
   colour: MyString
-  level: MyString
 
 two:
   racquet: two
   name: MyString
   colour: MyString
-  level: MyString

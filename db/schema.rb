@@ -10,28 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_07_125625) do
-
-  create_table "cart_items", force: :cascade do |t|
-    t.integer "clothing_id"
-    t.integer "cart_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cart_id"], name: "index_cart_items_on_cart_id"
-    t.index ["clothing_id"], name: "index_cart_items_on_clothing_id"
-  end
-
-  create_table "carts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2020_12_07_160316) do
 
   create_table "clothings", force: :cascade do |t|
-    t.string "gender"
-    t.string "brand"
-    t.string "category"
-    t.string "size"
-    t.float "price"
+    t.string "gender", null: false
+    t.string "brand", null: false
+    t.string "category", null: false
+    t.string "size", null: false
+    t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id", null: false
@@ -40,18 +26,17 @@ ActiveRecord::Schema.define(version: 2020_12_07_125625) do
 
   create_table "cords", force: :cascade do |t|
     t.integer "racquet_id"
-    t.string "name"
-    t.string "colour"
-    t.string "level"
+    t.string "name", null: false
+    t.string "colour", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["racquet_id"], name: "index_cords_on_racquet_id"
   end
 
   create_table "racquets", force: :cascade do |t|
-    t.string "brand"
-    t.string "level"
-    t.float "weight"
+    t.string "brand", null: false
+    t.string "level", null: false
+    t.float "weight", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id", null: false
@@ -64,6 +49,15 @@ ActiveRecord::Schema.define(version: 2020_12_07_125625) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

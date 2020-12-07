@@ -15,7 +15,6 @@ class CordsTest < ApplicationSystemTestCase
     click_on "New Cord"
 
     fill_in "Colour", with: @cord.colour
-    fill_in "Level", with: @cord.level
     fill_in "Name", with: @cord.name
     fill_in "Racquet", with: @cord.racquet_id
     click_on "Create Cord"
@@ -29,7 +28,6 @@ class CordsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Colour", with: @cord.colour
-    fill_in "Level", with: @cord.level
     fill_in "Name", with: @cord.name
     fill_in "Racquet", with: @cord.racquet_id
     click_on "Update Cord"

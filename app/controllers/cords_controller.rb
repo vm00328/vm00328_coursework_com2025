@@ -1,6 +1,6 @@
 class CordsController < ApplicationController
   before_action :set_cord, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_racquet, only: [:new, :create]
   # GET /cords
   # GET /cords.json
   def index
@@ -14,7 +14,8 @@ class CordsController < ApplicationController
 
   # GET /cords/new
   def new
-    @cord = Cord.new
+    # @cord = Cord.new
+    @cord=@racquet.cords.new
   end
 
   # GET /cords/1/edit
@@ -24,8 +25,8 @@ class CordsController < ApplicationController
   # POST /cords
   # POST /cords.json
   def create
-    @cord = Cord.new(cord_params)
-
+    # @cord = Cord.new(cord_params)
+    @cord = @racquet.cords.new(cord_params)
     respond_to do |format|
       if @cord.save
         format.html { redirect_to @cord, notice: 'Cord was successfully created.' }
@@ -62,13 +63,16 @@ class CordsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    def set_racquet
+      @racquet = Racquet.find_by(id: params[:racquet_id]) || Racquet.find(cord_params[:racquet_id])
+    end
+      # Use callbacks to share common setup or constraints between actions.
     def set_cord
       @cord = Cord.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def cord_params
-      params.require(:cord).permit(:racquet_id, :name, :colour, :level)
+      params.require(:cord).permit(:racquet_id, :name, :colour)
     end
 end

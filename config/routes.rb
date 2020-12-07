@@ -16,9 +16,6 @@ Rails.application.routes.draw do
   #
   # #The tennis shoes page
   # get 'shoes', to: 'home#index'
-
-  #The accessories page
-  get 'accessories', to: 'accessories#index'
   get 'home', to: 'home#home'
 
   #The contact page

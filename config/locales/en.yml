@@ -51,12 +51,24 @@ en:
       category: Category
       size: Size
       price: Price
-    create:
-      create: Clothing was successfully created.
+      show: View
+      edit: Edit
+      remove: Remove
+      confirm: "Are you sure you want to delete this item?"
+      add: Add new piece of clothing
     update:
-      edit: Clothing was successfully edited.
+      edit: Clothing updated successfuly!
     destroy:
-      remove: Clothing was successfully removed.
+      remove: Clothing discarded!
+
+    show:
+      gender: Gender
+      brand: Brand
+      category: Category
+      size: Size
+      price: Price
+      edit: Edit this item
+      back: Return to the clothings page
     new:
       title: New Clothing
 

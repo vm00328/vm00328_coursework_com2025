@@ -1,27 +1,27 @@
 <p>
-  <strong>Gender:</strong>
+  <strong><%= t('.gender') %></strong>
   <%= @clothing.gender %>
 </p>
 
 <p>
-  <strong>Brand:</strong>
+  <strong><%= t('.brand') %></strong>
   <%= @clothing.brand %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong><%= t('.category') %></strong>
   <%= @clothing.category %>
 </p>
 
 <p>
-  <strong>Size:</strong>
+  <strong><%= t('.size') %></strong>
   <%= @clothing.size %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong><%= t('.price') %></strong>
   <%= @clothing.price %>
 </p>
 
-<%= link_to 'Edit', edit_clothing_path(@clothing) %> |
-<%= link_to 'Back', clothings_path %>
+<%= link_to t('.edit'), edit_clothing_path(@clothing) %> |
+<%= link_to t('.back'), clothings_path %>

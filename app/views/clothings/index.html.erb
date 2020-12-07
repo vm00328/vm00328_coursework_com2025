@@ -20,12 +20,12 @@
         <td><%= clothing.category %></td>
         <td><%= clothing.size %></td>
         <td><%= clothing.price %></td>
-        <td><%= link_to 'Display', clothing %></td>
-        <td><%= link_to 'Edit', edit_clothing_path(clothing) %></td>
-        <td><%= link_to 'Remove', clothing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('.show'), clothing %></td>
+        <td><%= link_to t('.edit'), edit_clothing_path(clothing) %></td>
+        <td><%= link_to t('.remove'), clothing, method: :delete, data: { confirm: t('.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 <br>
-<%= link_to 'Add New Piece Of Clothing', new_clothing_path, :class => 'new_items' %>
+<%= link_to t('.add'), new_clothing_path, :class => 'new_items' %>

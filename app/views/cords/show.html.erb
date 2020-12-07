@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Racquet:</strong>
+  <%= @cord.racquet %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cord.name %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @cord.colour %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @cord.level %>
+</p>
+
+<%= link_to 'Edit', edit_cord_path(@cord) %> |
+<%= link_to 'Back', cords_path %>

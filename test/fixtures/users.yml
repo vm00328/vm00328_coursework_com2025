@@ -7,9 +7,7 @@
 one:
   email: one@domain.com
   encrypted_password: nothing
-# column: value
-#
+
 two:
   email: two@domain.com
   encrypted_password: nothing
-# column: value

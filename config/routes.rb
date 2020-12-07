@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :cart_items
-  resources :carts
+  resources :cords
   resources :racquets
   resources :clothings
   #Resource paths
@@ -10,13 +9,13 @@ Rails.application.routes.draw do
   root 'home#home'
 
   #The tennis racquets page
-  get 'racquets', to: 'racquets#index'
-
-  #The clothing page
-  get 'clothing', to: 'clothings#index'
-
-  #The tennis shoes page
-  get 'shoes', to: 'home#index'
+  # get 'racquets', to: 'racquets#index'
+  #
+  # #The clothing page
+  # get 'clothing', to: 'clothings#index'
+  #
+  # #The tennis shoes page
+  # get 'shoes', to: 'home#index'
 
   #The accessories page
   get 'accessories', to: 'accessories#index'
@@ -25,4 +24,6 @@ Rails.application.routes.draw do
   #The contact page
   get 'contact', to: 'home#contact'
   post 'request_contact', to: 'home#request_contact'
+
+  #Adding route from racuqtes page to clothings page
 end

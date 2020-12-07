@@ -6,23 +6,7 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-h1{
-  text-align: center;
-}
-.new_items{
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-table.center{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -53,7 +37,7 @@ th {
 }
 
 td {
-  padding: 0px 5px 7px;
+  padding: 0 5px 7px;
 }
 
 div {

@@ -4,7 +4,7 @@ class ClothingTest < ActiveSupport::TestCase
   setup do
     @user = users(:one)
   end
-  
+
     test "should save valid clothing" do
         clothing = Clothing.new
     #     # post clothings_path, params:{gender: 'Male', brand: 'Nike', category: 'T-Shirt', size: 'L', price: 90}
@@ -23,5 +23,4 @@ class ClothingTest < ActiveSupport::TestCase
       clothing.save
       refute clothing.valid?
     end
-
 end

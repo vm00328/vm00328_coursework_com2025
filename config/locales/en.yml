@@ -60,6 +60,10 @@ en:
       edit: Clothing updated successfuly!
     destroy:
       remove: Clothing discarded!
+    edit:
+      title: Editing Your Clothing
+      show: View
+      back: Back to the Clothings page
 
     show:
       gender: Gender
@@ -133,4 +137,4 @@ en:
       sign_up: Sign Up
       login: Login
       my_account: My Profile
-      logout: Log out
+      logout: Log Out

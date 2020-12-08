@@ -23,5 +23,6 @@
   <%= @clothing.price %>
 </p>
 
-<%= link_to t('.edit'), edit_clothing_path(@clothing) %> |
-<%= link_to t('.back'), clothings_path %>
+<%= link_to t('.edit'), edit_clothing_path(@clothing), :class => 'link' %>
+<br>
+<%= link_to t('.back'), clothings_path, :class => 'link' %>

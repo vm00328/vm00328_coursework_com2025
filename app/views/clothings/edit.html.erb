@@ -1,6 +1,7 @@
-<h1>Editing Clothing</h1>
+<h1><%= t('.title') %></h1>
 
 <%= render 'form', clothing: @clothing %>
 
-<%= link_to 'Show', @clothing %> |
-<%= link_to 'Back', clothings_path %>
+<%= link_to t('.show'), @clothing, :class => 'link' %>
+<br>
+<%= link_to t('.back'), clothings_path, :class => 'link' %>

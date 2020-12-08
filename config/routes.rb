@@ -2,25 +2,18 @@ Rails.application.routes.draw do
   resources :cords
   resources :racquets
   resources :clothings
-  #Resource paths
+  #routes for devise gem
   devise_for :users
 
-  #The root is the home page
+  #maps home to Root
   root 'home#home'
 
-  #The tennis racquets page
-  # get 'racquets', to: 'racquets#index'
-  #
-  # #The clothing page
-  # get 'clothing', to: 'clothings#index'
-  #
-  # #The tennis shoes page
-  # get 'shoes', to: 'home#index'
   get 'home', to: 'home#home'
 
-  #The contact page
+  #routes for mailer and contact page
   get 'contact', to: 'home#contact'
   post 'request_contact', to: 'home#request_contact'
-
-  #Adding route from racuqtes page to clothings page
+  
+  resources :racquets, only: [:index, :new, :create, :show, :edit, :destroy]
+  resources :clothings, only: [:index, :new, :create, :show, :edit, :destroy]
 end

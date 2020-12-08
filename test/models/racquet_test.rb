@@ -19,4 +19,28 @@ test "should not save empty racquet" do
   racquet.save
   refute racquet.valid?
   end
+
+  test "should not save racquet if brand is empty" do
+      racquet = Racquet.new
+      racquet.level = 'Intermediate'
+      racquet.weight = 300.0
+      racquet.save
+      refute racquet.valid?
+    end
+
+  test "should not save racquet if level is empty" do
+      racquet = Racquet.new
+      racquet.brand = 'Babolat'
+      racquet.weight = 300.0
+      racquet.save
+      refute racquet.valid?
+    end
+
+    test "should not save racquet if weight is empty" do
+        racquet = Racquet.new
+        racquet.brand = 'Babolat'
+        racquet.level = 'Intermediate'
+        racquet.save
+        refute racquet.valid?
+    end
 end

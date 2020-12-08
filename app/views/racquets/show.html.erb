@@ -13,6 +13,8 @@
   <%= @racquet.weight %>
 </p>
 
-<%= link_to t('.edit'), edit_racquet_path(@racquet) %> |
-<%= link_to t('.back'), racquets_path %>
-<%= link_to t('.add_cord'), new_cord_path(racquet_id: @racquet) %>
+<%= link_to t('.edit'), edit_racquet_path(@racquet), :class => 'link' %>
+<br>
+<%= link_to t('.back'), racquets_path, :class => 'link' %>
+<br>
+<%= link_to t('.add_cord'), new_cord_path(racquet_id: @racquet), :class => 'link' %>

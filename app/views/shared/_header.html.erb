@@ -5,7 +5,7 @@
 <% if user_signed_in? %>
 <div style="color:white"><%= "#{current_user.email} " %></div>
 <li><a href="/users/edit"><span class="glyphicon glyphicon-user"></span><%= t('.my_account') %></a></li>
-<li><%= link_to t('logout'), destroy_user_session_path, method: 'delete' %></li>
+<li><%= link_to t('.logout'), destroy_user_session_path, method: 'delete', :class => 'glyphicon glyphicon-log-out' %></li>
 <% else %>
 <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span><%= t('.login') %></a></li>
 <li><a href="/users/sign_up"><span class="glyphicon glyphicon-user"></span><%= t('.sign_up') %></a></li>
@@ -14,9 +14,9 @@
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <%= link_to("Home", home_path()) %>
-  <a href="clothings"><%= t('.clothing') %></a>
-  <a href="racquets"><%= t('.racquets') %></a>
-  <a href="contact"><%= t('.contact') %></a>
+  <a href="/clothings"><%= t('.clothing') %></a>
+  <a href="/racquets"><%= t('.racquets') %></a>
+  <a href="/contact"><%= t('.contact') %></a>
 </div>
 <div id="main">
   <button class="openbtn" onclick="openNav()">&#9776;</button>

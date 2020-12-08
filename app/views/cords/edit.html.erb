@@ -1,6 +1,6 @@
-<h1>Editing Cord</h1>
+<h1><%= t('.title') %></h1>
 
 <%= render 'form', cord: @cord %>
 
-<%= link_to 'Show', @cord %> |
-<%= link_to 'Back', cords_path %>
+<button style="margin-left:43%" class="button"><%= link_to t('.show'), @cord, :style => 'text-decoration:none'%></button>
+<button style="margin-left:43%" class="button"><%= link_to t('.back'), cords_path, :style => 'text-decoration:none' %></button>

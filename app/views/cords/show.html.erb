@@ -15,5 +15,5 @@
   <%= @cord.colour %>
 </p>
 
-<%= link_to t('.edit'), edit_cord_path(@cord) %> |
-<%= link_to t('.back'), cords_path %>
+<button class="button"><%= link_to t('.edit'), edit_cord_path(@cord), :style => 'text-decoration:none' %></button>
+<button class="button"><%= link_to t('.back'), cords_path, :style => 'text-decoration:none' %></button>

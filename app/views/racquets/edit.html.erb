@@ -1,6 +1,6 @@
+<h3><%= t('.cord_info') %></h3>
 <h1><%= t('.edit') %></h1>
-
 <%= render 'form', racquet: @racquet %>
 
-<%= link_to 'Show', @racquet, :class => 'link' %> |
-<%= link_to 'Back', racquets_path %>
+<button style="margin-left:43%" class="button"><%= link_to 'Show', @racquet, :style => 'text-decoration:none' %></button>
+<button style="margin-left:43%" class="button"><%= link_to 'Back', racquets_path, :style => 'text-decoration:none' %></button>

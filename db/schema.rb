@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_07_160316) do
+ActiveRecord::Schema.define(version: 2020_12_08_193533) do
 
   create_table "clothings", force: :cascade do |t|
     t.string "gender", null: false
@@ -30,7 +30,9 @@ ActiveRecord::Schema.define(version: 2020_12_07_160316) do
     t.string "colour", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
     t.index ["racquet_id"], name: "index_cords_on_racquet_id"
+    t.index ["user_id"], name: "index_cords_on_user_id"
   end
 
   create_table "racquets", force: :cascade do |t|

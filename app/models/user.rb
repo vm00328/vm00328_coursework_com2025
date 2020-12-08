@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :clothings
          has_many :racquets
+         has_many :cords
 end

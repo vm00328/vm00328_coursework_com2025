@@ -1,10 +1,12 @@
 class CordsController < ApplicationController
   before_action :set_cord, only: [:show, :edit, :update, :destroy]
   before_action :set_racquet, only: [:new, :create]
+  # before_action :authenticate_user!
   # GET /cords
   # GET /cords.json
   def index
     @cords = Cord.all
+    @cords = Cord.user_cords(current_user)
   end
 
   # GET /cords/1
@@ -27,6 +29,7 @@ class CordsController < ApplicationController
   def create
     # @cord = Cord.new(cord_params)
     @cord = @racquet.cords.new(cord_params)
+    @cord.user = current_user
     respond_to do |format|
       if @cord.save
         format.html { redirect_to @cord, notice: 'Cord was successfully created.' }

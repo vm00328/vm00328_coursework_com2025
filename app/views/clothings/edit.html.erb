@@ -1,7 +1,5 @@
 <h1><%= t('.title') %></h1>
 
 <%= render 'form', clothing: @clothing %>
-
-<%= link_to t('.show'), @clothing, :class => 'link' %>
-<br>
-<%= link_to t('.back'), clothings_path, :class => 'link' %>
+<button style="margin-left:43%" class="button"><%= link_to t('.show'), @clothing, :style => 'text-decoration:none' %></button>
+<button style="margin-left:43%" class="button"><%= link_to t('.back'), clothings_path, :style => 'text-decoration:none' %></button>

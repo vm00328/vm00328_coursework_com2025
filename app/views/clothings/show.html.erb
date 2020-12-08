@@ -23,6 +23,5 @@
   <%= @clothing.price %>
 </p>
 
-<%= link_to t('.edit'), edit_clothing_path(@clothing), :class => 'link' %>
-<br>
-<%= link_to t('.back'), clothings_path, :class => 'link' %>
+<button class="button"><%= link_to t('.edit'), edit_clothing_path(@clothing), :style => 'text-decoration:none' %></button>
+<button class="button"><%= link_to t('.back'), clothings_path, :style => 'text-decoration:none' %></button>

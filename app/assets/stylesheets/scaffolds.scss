@@ -6,13 +6,44 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-.link{
+.button{
+  background-color: #FFA500;
+  color: white;
+  padding: 5px 5px;
   margin-top:10px;
-  margin-left: 43%;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+}
+.button:hover{
+  text-decoration: none;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   text-decoration: none;
 }
+@media only screen and (max-width: 30em) {
+  .button{
+    display: block;
+    margin:0.4em auto;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .button {display: block;}
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .button {display: block;}
+}
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -32,7 +63,6 @@ a {
 
   &:hover {
     color: #fff;
-    // background-color: #000;
     text-decoration: none;
   }
 }

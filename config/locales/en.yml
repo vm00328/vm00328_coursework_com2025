@@ -64,6 +64,8 @@ en:
       title: Editing Your Clothing
       show: View
       back: Back to the Clothings page
+    create:
+      create: Your clothing has been created successfully!
 
     show:
       gender: Gender

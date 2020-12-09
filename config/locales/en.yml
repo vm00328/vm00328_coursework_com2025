@@ -38,6 +38,11 @@ en:
     contact:
       contact_us: "Complete the following form to get in touch with us:"
       submit: Contact Us
+      enter_name: Enter your name
+      enter_email: Enter Email
+      enter_telephone: Enter Telephone
+      enter_subject: Enter subject of topic
+      enter_message: Enter a message
 
     request_contact:
       no_email: You must supply an email address.
@@ -89,7 +94,7 @@ en:
       remove: Remove
       confirm_remove: "Are you sure you want to remove this racquet?"
       add_new_racquet: Add new racquet
-      edit_info: "You can add customised cords to a specific racquet by clicking on 'Edit your racquet'"
+      edit_info: "You can add customised cords to a specific racquet by clicking on 'Edit your racquet' once a racquet is created."
     new:
       new_racquet: New Racquet
       link_back: Return to the Racquets page
@@ -102,11 +107,11 @@ en:
       add_cord: Add cord to this racquet
     edit:
       edit: Editing your Racquet
-      cord_info: 'Click on the Show button to be able to customise the cord.'
+      cord_info: "Click on the 'Add Cord' button to further customise your racquet"
 
   cords:
     index:
-      title: "Here you can add a customised cord to your racquet:"
+      title: "Here you can view the cords of your racquets:"
       racquet: Racquet
       name: Name of Cord
       colour: Colour
@@ -116,6 +121,7 @@ en:
       confirm_destroy: "Are you sure you want to remove this cord?"
       new_cord: Create a new cord for you racquets
       back: Back to the Racquets page
+      remove: Remove cord
     show:
       racquet: "Racquet:"
       name_of_cord: "Name of the cord you picked:"

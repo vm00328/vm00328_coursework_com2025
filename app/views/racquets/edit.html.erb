@@ -4,3 +4,4 @@
 
 <button style="margin-left:43%" class="button"><%= link_to 'Show', @racquet, :style => 'text-decoration:none' %></button>
 <button style="margin-left:43%" class="button"><%= link_to 'Back', racquets_path, :style => 'text-decoration:none' %></button>
+<button class="button" style="margin-left:43%"><%= link_to t('.add_cord'), new_cord_path(racquet_id: @racquet), :style => 'text-decoration:none' %></button>

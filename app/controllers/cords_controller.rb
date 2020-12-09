@@ -16,7 +16,6 @@ class CordsController < ApplicationController
 
   # GET /cords/new
   def new
-    # @cord = Cord.new
     @cord=@racquet.cords.new
   end
 

@@ -3,6 +3,7 @@ require 'test_helper'
 class CordsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @cord = cords(:one)
+    @racquet = racquets(:one)
   end
 
   test "should get index" do

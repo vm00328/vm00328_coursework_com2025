@@ -31,7 +31,7 @@ class RacquetsController < ApplicationController
 
     respond_to do |format|
       if @racquet.save
-        format.html { redirect_to @racquet, notice: 'Racquet was successfully created.' }
+        format.html { redirect_to @racquet, notice: t('racquets.create.success') }
         format.json { render :show, status: :created, location: @racquet }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class RacquetsController < ApplicationController
   def update
     respond_to do |format|
       if @racquet.update(racquet_params)
-        format.html { redirect_to @racquet, notice: 'Racquet was successfully updated.' }
+        format.html { redirect_to @racquet, notice: t('racquets.update.success') }
         format.json { render :show, status: :ok, location: @racquet }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class RacquetsController < ApplicationController
   def destroy
     @racquet.destroy
     respond_to do |format|
-      format.html { redirect_to racquets_url, notice: 'Racquet was successfully destroyed.' }
+      format.html { redirect_to racquets_url, notice: t('racquets.destroy.success') }
       format.json { head :no_content }
     end
   end

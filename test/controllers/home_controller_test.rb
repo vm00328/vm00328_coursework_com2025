@@ -4,7 +4,9 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   # include Devise::TestHelpers
   test "should get home" do
     get root_url
+    #Check if the request was successful.
     assert_response :success
+    #Check if the correct content was included.
     assert_select 'title', 'Tennis World VM'
   end
 

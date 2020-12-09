@@ -31,7 +31,7 @@ class CordsController < ApplicationController
     @cord.user = current_user
     respond_to do |format|
       if @cord.save
-        format.html { redirect_to @cord, notice: 'Cord was successfully created.' }
+        format.html { redirect_to @cord, notice: t('cords.create.success') }
         format.json { render :show, status: :created, location: @cord }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class CordsController < ApplicationController
   def update
     respond_to do |format|
       if @cord.update(cord_params)
-        format.html { redirect_to @cord, notice: 'Cord was successfully updated.' }
+        format.html { redirect_to @cord, notice: t('cords.update.success') }
         format.json { render :show, status: :ok, location: @cord }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class CordsController < ApplicationController
   def destroy
     @cord.destroy
     respond_to do |format|
-      format.html { redirect_to cords_url, notice: 'Cord was successfully destroyed.' }
+      format.html { redirect_to cords_url, notice: t('cords.destroy.success') }
       format.json { head :no_content }
     end
   end

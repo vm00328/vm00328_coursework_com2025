@@ -2,8 +2,8 @@
 
 one:
   racquet: one
-  name: MyString
-  colour: MyString
+  name: MyStrings
+  colour: MyStrings
 
 two:
   racquet: two

@@ -3,7 +3,8 @@ require 'test_helper'
 class CordTest < ActiveSupport::TestCase
   setup do
     @cord = cords(:one)
-end
+    @racquet = racquets(:one)
+  end
 
   test 'should save valid cord' do
     cord = Cord.new
@@ -11,7 +12,7 @@ end
     cord.colour = 'orange'
     cord.racquet = @racquet
     cord.save
-    refute cord.valid?
+    assert cord.valid?
   end
 
   test 'should not save empty cord' do
